@@ -18,8 +18,8 @@ sidebar: false
 2.  Tedas, Human resources, 2023
 
 # Projects
-1.  Graduation project, a furniture company, Demand Forecasting - 2024
-2.  Graduation project, a pizza restaurant, Lean Production - 2024
+1.  Graduation project, a furniture company, Lean Production - 2024
+2.  Graduation project, a pizza restaurant, Demand Forecasting  - 2024
 
 # Competencies
 
