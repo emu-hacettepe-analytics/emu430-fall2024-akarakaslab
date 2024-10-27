@@ -11,7 +11,6 @@ sidebar: false
 
 ## Employements
 
-
 ## Internships
 
 1.  Devlet Hava Meydanlari, Human resources, 2022
@@ -33,3 +32,5 @@ Swimming
 # CV
 
 My CV is the link below
+
+[AtacanKarakasCV.pdf](https://drive.google.com/file/d/1m26DZFm2HocXbEE7gbapWvUAN1uEMKss/view?usp=drive_link)
