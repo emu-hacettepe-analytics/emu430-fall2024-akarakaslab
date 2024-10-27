@@ -9,7 +9,7 @@ My first assignment has two parts.
 
 I chose the video named Veri Bilimi ve Endustri Muhendisligi Uzerine Sohbetler - Baykal Hafizoglu & Erdi Dasdemir. I summarized the talk and prepared 2 questions. 
 
-
+In his speech, he gave lectures about who he is (education, experiences, projects, fun), his perspective on the OR analytics world, the developing and changing issues and some issues related to this world. He gave a speech about analytical solutions. Finally, he answered the students' questions.
 
 
 ## (a)
