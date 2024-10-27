@@ -7,20 +7,19 @@ title: "Assignment 1"
 
 My first assignment has two parts.
 
-I chose the video named Veri Bilimi ve End??stri M??hendisli??i ??zerine Sohbetler - Baykal Haf??zo??lu & Erdi Da??demir and summarized the speech and prepared 2 questions. 
+I chose the video named Veri Bilimi ve Endustri Muhendisligi Uzerine Sohbetler - Baykal Hafizoglu & Erdi Dasdemir.I summarized the talk and prepared 2 questions. 
 
 
 ## (a)
 
-
-Open-ended Question:
-
-
-Answer:
+1- Open-ended Question:What are the required courses and topics to know for descriptive analytics?
 
 
+Answer:Time series analysis, Data Minig, Data Visualization
 
-Multiple Question:What is the correct order of data analytics types?
+
+
+2- Multiple Question:What is the correct order of data analytics types?
 
 A) Prescriptive, Descriptive, Predictive, Diagnostic
 B) Predictive, Descriptive, Prescriptive, Diagnostic
