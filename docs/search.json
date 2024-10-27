@@ -46,7 +46,7 @@
     "href": "assignments/assignment-1.html",
     "title": "Assignment 1",
     "section": "",
-    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts.\n\n\n\n\n\nlibrary(dslabs) data(polls_us_election_2016)\nprint(head(polls_us_election_2016, 10)) print(sum(is.na(polls_us_election_2016)))\npolls_us_election_2016_new &lt;- polls_us_election_2016\nbirth_year &lt;- 2001\nfirst_name &lt;- “Atacan”\nfor (i in 1:length(polls_us_election_2016_new)) {\nif (is.numeric(polls_us_election_2016_new[[i]])) { polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] &lt;- birth_year } else if (is.character(polls_us_election_2016_new[[i]])) { polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] &lt;- first_name } }\nprint(head(polls_us_election_2016_new, 10)) remaining_na &lt;- sum(is.na(polls_us_election_2016_new))\ncat(“Yeni veri cercevesindeki kalan NA sayisi:”, remaining_na, “”)",
+    "text": "1 + 1\n\n[1] 2\n\n\nMy first assignment has two parts.\nI chose the video named Veri Bilimi ve End??stri M??hendisli??i ??zerine Sohbetler - Baykal Haf??zo??lu & Erdi Da??demir and summarized the speech and prepared 2 questions.\n\n\nOpen-ended Question:\nAnswer:\nMultiple Question:\n\n\n\n\n\n\nAnswer:\n\n\n\nlibrary(dslabs) data(polls_us_election_2016)\nprint(head(polls_us_election_2016, 10)) print(sum(is.na(polls_us_election_2016)))\npolls_us_election_2016_new &lt;- polls_us_election_2016\nbirth_year &lt;- 2001\nfirst_name &lt;- “Atacan”\nfor (i in 1:length(polls_us_election_2016_new)) {\nif (is.numeric(polls_us_election_2016_new[[i]])) { polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] &lt;- birth_year } else if (is.character(polls_us_election_2016_new[[i]])) { polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] &lt;- first_name } }\nprint(head(polls_us_election_2016_new, 10)) remaining_na &lt;- sum(is.na(polls_us_election_2016_new))\ncat(“Yeni veri cercevesindeki kalan NA sayisi:”, remaining_na, “”)",
     "crumbs": [
       "Assignment 1"
     ]
@@ -74,6 +74,16 @@
     "title": "Assignment 1",
     "section": "",
     "text": "library(dslabs) data(polls_us_election_2016)\nprint(head(polls_us_election_2016, 10)) print(sum(is.na(polls_us_election_2016)))\npolls_us_election_2016_new &lt;- polls_us_election_2016\nbirth_year &lt;- 2001\nfirst_name &lt;- “Atacan”\nfor (i in 1:length(polls_us_election_2016_new)) {\nif (is.numeric(polls_us_election_2016_new[[i]])) { polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] &lt;- birth_year } else if (is.character(polls_us_election_2016_new[[i]])) { polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] &lt;- first_name } }\nprint(head(polls_us_election_2016_new, 10)) remaining_na &lt;- sum(is.na(polls_us_election_2016_new))\ncat(“Yeni veri cercevesindeki kalan NA sayisi:”, remaining_na, “”)",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#a",
+    "href": "assignments/assignment-1.html#a",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Open-ended Question:\nAnswer:\nMultiple Question:\n\n\n\n\n\n\nAnswer:",
     "crumbs": [
       "Assignment 1"
     ]
