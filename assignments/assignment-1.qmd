@@ -4,9 +4,6 @@ title: "Assignment 1"
 
 # Assignment 1
 
-```{r}
-1 + 1
-```
 
 My first assignment has two parts.
 
@@ -23,19 +20,19 @@ Answer:
 
 
 
-Multiple Question:
+Multiple Question:What is the correct order of data analytics types?
 
-a)
-b)
-c)
-d)
+A) Prescriptive, Descriptive, Predictive, Diagnostic
+B) Predictive, Descriptive, Prescriptive, Diagnostic
+C) Descriptive, Diagnostic, Predictive, Prescriptive,
+D) Descriptive, Prescriptive, Predictive, Diagnostic
 
-Answer:
+Answer:C
 
 
 ## (b)
 
-
+```{r}
 library(dslabs)
 data(polls_us_election_2016)
 
@@ -57,4 +54,9 @@ for (i in 1:length(polls_us_election_2016_new)) {
 
 print(head(polls_us_election_2016_new, 10))
 remaining_na <- sum(is.na(polls_us_election_2016_new))  
-cat("Yeni veri cercevesindeki kalan NA sayisi:", remaining_na, "\n")  
+#I learned cat from chatgpt
+cat("Yeni veri cercevesindeki kalan NA sayisi:", remaining_na, "\n")
+```
+
+
+  

@@ -247,38 +247,145 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="assignment-1" class="level1">
 <h1>Assignment 1</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
 <p>My first assignment has two parts.</p>
 <p>I chose the video named Veri Bilimi ve End??stri M??hendisli??i ??zerine Sohbetler - Baykal Haf??zo??lu &amp; Erdi Da??demir and summarized the speech and prepared 2 questions.</p>
 <section id="a" class="level2">
 <h2 class="anchored" data-anchor-id="a">(a)</h2>
 <p>Open-ended Question:</p>
 <p>Answer:</p>
-<p>Multiple Question:</p>
-<ol type="a">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<p>Multiple Question:What is the correct order of data analytics types?</p>
+<ol type="A">
+<li>Prescriptive, Descriptive, Predictive, Diagnostic</li>
+<li>Predictive, Descriptive, Prescriptive, Diagnostic</li>
+<li>Descriptive, Diagnostic, Predictive, Prescriptive,</li>
+<li>Descriptive, Prescriptive, Predictive, Diagnostic</li>
 </ol>
-<p>Answer:</p>
+<p>Answer:C</p>
 </section>
 <section id="b" class="level2">
 <h2 class="anchored" data-anchor-id="b">(b)</h2>
-<p>library(dslabs) data(polls_us_election_2016)</p>
-<p>print(head(polls_us_election_2016, 10)) print(sum(is.na(polls_us_election_2016)))</p>
-<p>polls_us_election_2016_new &lt;- polls_us_election_2016</p>
-<p>birth_year &lt;- 2001<br>
-first_name &lt;- “Atacan”</p>
-<p>for (i in 1:length(polls_us_election_2016_new)) {<br>
-if (is.numeric(polls_us_election_2016_new[[i]])) { polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] &lt;- birth_year } else if (is.character(polls_us_election_2016_new[[i]])) { polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] &lt;- first_name } }</p>
-<p>print(head(polls_us_election_2016_new, 10)) remaining_na &lt;- sum(is.na(polls_us_election_2016_new))<br>
-cat(“Yeni veri cercevesindeki kalan NA sayisi:”, remaining_na, “”)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(polls_us_election_2016)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(polls_us_election_2016, <span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        state  startdate    enddate
+1        U.S. 2016-11-03 2016-11-06
+2        U.S. 2016-11-01 2016-11-07
+3        U.S. 2016-11-02 2016-11-06
+4        U.S. 2016-11-04 2016-11-07
+5        U.S. 2016-11-03 2016-11-06
+6        U.S. 2016-11-03 2016-11-06
+7        U.S. 2016-11-02 2016-11-06
+8        U.S. 2016-11-03 2016-11-05
+9  New Mexico 2016-11-06 2016-11-06
+10       U.S. 2016-11-04 2016-11-07
+                                                     pollster grade samplesize
+1                                    ABC News/Washington Post    A+       2220
+2                                     Google Consumer Surveys     B      26574
+3                                                       Ipsos    A-       2195
+4                                                      YouGov     B       3677
+5                                            Gravis Marketing    B-      16639
+6  Fox News/Anderson Robbins Research/Shaw &amp; Company Research     A       1295
+7                                     CBS News/New York Times    A-       1426
+8                                NBC News/Wall Street Journal    A-       1282
+9                                                    Zia Poll  &lt;NA&gt;       8439
+10                                                   IBD/TIPP    A-       1107
+   population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin
+1          lv           47.00         43.00            4.00               NA
+2          lv           38.03         35.69            5.46               NA
+3          lv           42.00         39.00            6.00               NA
+4          lv           45.00         41.00            5.00               NA
+5          rv           47.00         43.00            3.00               NA
+6          lv           48.00         44.00            3.00               NA
+7          lv           45.00         41.00            5.00               NA
+8          lv           44.00         40.00            6.00               NA
+9          lv           46.00         44.00            6.00               NA
+10         lv           41.20         42.70            7.10               NA
+   adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin
+1         45.20163      41.72430        4.626221               NA
+2         43.34557      41.21439        5.175792               NA
+3         42.02638      38.81620        6.844734               NA
+4         45.65676      40.92004        6.069454               NA
+5         46.84089      42.33184        3.726098               NA
+6         49.02208      43.95631        3.057876               NA
+7         45.11649      40.92722        4.341786               NA
+8         43.58576      40.77325        5.365788               NA
+9         44.82594      41.59978        7.870127               NA
+10        42.92745      42.23545        6.316175               NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">sum</span>(<span class="fu">is.na</span>(polls_us_election_2016)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 11604</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>polls_us_election_2016_new <span class="ot">&lt;-</span> polls_us_election_2016</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>birth_year <span class="ot">&lt;-</span> <span class="dv">2001</span>  </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>first_name <span class="ot">&lt;-</span> <span class="st">"Atacan"</span>  </span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(polls_us_election_2016_new)) {  </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">is.numeric</span>(polls_us_election_2016_new[[i]])) {</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        polls_us_election_2016_new[[i]][<span class="fu">is.na</span>(polls_us_election_2016_new[[i]])] <span class="ot">&lt;-</span> birth_year</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">is.character</span>(polls_us_election_2016_new[[i]])) {</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        polls_us_election_2016_new[[i]][<span class="fu">is.na</span>(polls_us_election_2016_new[[i]])] <span class="ot">&lt;-</span> first_name</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">head</span>(polls_us_election_2016_new, <span class="dv">10</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>        state  startdate    enddate
+1        U.S. 2016-11-03 2016-11-06
+2        U.S. 2016-11-01 2016-11-07
+3        U.S. 2016-11-02 2016-11-06
+4        U.S. 2016-11-04 2016-11-07
+5        U.S. 2016-11-03 2016-11-06
+6        U.S. 2016-11-03 2016-11-06
+7        U.S. 2016-11-02 2016-11-06
+8        U.S. 2016-11-03 2016-11-05
+9  New Mexico 2016-11-06 2016-11-06
+10       U.S. 2016-11-04 2016-11-07
+                                                     pollster grade samplesize
+1                                    ABC News/Washington Post    A+       2220
+2                                     Google Consumer Surveys     B      26574
+3                                                       Ipsos    A-       2195
+4                                                      YouGov     B       3677
+5                                            Gravis Marketing    B-      16639
+6  Fox News/Anderson Robbins Research/Shaw &amp; Company Research     A       1295
+7                                     CBS News/New York Times    A-       1426
+8                                NBC News/Wall Street Journal    A-       1282
+9                                                    Zia Poll  &lt;NA&gt;       8439
+10                                                   IBD/TIPP    A-       1107
+   population rawpoll_clinton rawpoll_trump rawpoll_johnson rawpoll_mcmullin
+1          lv           47.00         43.00            4.00             2001
+2          lv           38.03         35.69            5.46             2001
+3          lv           42.00         39.00            6.00             2001
+4          lv           45.00         41.00            5.00             2001
+5          rv           47.00         43.00            3.00             2001
+6          lv           48.00         44.00            3.00             2001
+7          lv           45.00         41.00            5.00             2001
+8          lv           44.00         40.00            6.00             2001
+9          lv           46.00         44.00            6.00             2001
+10         lv           41.20         42.70            7.10             2001
+   adjpoll_clinton adjpoll_trump adjpoll_johnson adjpoll_mcmullin
+1         45.20163      41.72430        4.626221             2001
+2         43.34557      41.21439        5.175792             2001
+3         42.02638      38.81620        6.844734             2001
+4         45.65676      40.92004        6.069454             2001
+5         46.84089      42.33184        3.726098             2001
+6         49.02208      43.95631        3.057876             2001
+7         45.11649      40.92722        4.341786             2001
+8         43.58576      40.77325        5.365788             2001
+9         44.82594      41.59978        7.870127             2001
+10        42.92745      42.23545        6.316175             2001</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>remaining_na <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(polls_us_election_2016_new))  </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#I learned cat from chatgpt</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Yeni veri cercevesindeki kalan NA sayisi:"</span>, remaining_na, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Yeni veri cercevesindeki kalan NA sayisi: 429 </code></pre>
+</div>
+</div>
 
 
 </section>
