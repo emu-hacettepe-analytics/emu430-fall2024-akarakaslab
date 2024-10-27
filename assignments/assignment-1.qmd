@@ -13,3 +13,27 @@ My first assignment has two parts.
 ## (a)
 
 ## (b)
+
+
+library(dslabs)
+data(polls_us_election_2016)
+
+print(head(polls_us_election_2016, 10))
+print(sum(is.na(polls_us_election_2016)))
+
+polls_us_election_2016_new <- polls_us_election_2016
+
+birth_year <- 2001  
+first_name <- "Atacan"  
+
+for (i in 1:length(polls_us_election_2016_new)) {  
+    if (is.numeric(polls_us_election_2016_new[[i]])) {
+        polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] <- birth_year
+    } else if (is.character(polls_us_election_2016_new[[i]])) {
+        polls_us_election_2016_new[[i]][is.na(polls_us_election_2016_new[[i]])] <- first_name
+    }
+}
+
+print(head(polls_us_election_2016_new, 10))
+remaining_na <- sum(is.na(polls_us_election_2016_new))  
+cat("Yeni veri cercevesindeki kalan NA sayisi:", remaining_na, "\n")  
